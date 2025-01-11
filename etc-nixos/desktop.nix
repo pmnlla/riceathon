@@ -19,12 +19,9 @@
         waybar
         hyprlock
         hyprpaper
-        wofi
+        walker
         dissent
         vesktop
-
-        # I HATE KITTY.
-
         
         # Alternatives to GUI utils
         nnn

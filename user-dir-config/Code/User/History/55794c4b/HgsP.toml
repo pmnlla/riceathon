@@ -1,0 +1,11 @@
+"ui.background" = "#101010"
+"ui.text" = "white"
+ui.selection = "#505050"
+
+[palette]
+white = "#ffffff"
+black = "#101010"
+green = "#99FFE4"
+orange = "#FFC799"
+red = "#FF8080"
+grey = "#505050"

@@ -1,0 +1,15 @@
+"ui.background" = "#101010"
+"ui.background.separator" = "#505050"
+"ui.text" = "white"
+"ui.selection" = "#505050"
+"ui.cursor" = "#A0A0A0"
+"ui.cursor.primary.select" = "#505050"
+"ui.statusline" = "#99FFE425"
+
+[palette]
+white = "#ffffff"
+black = "#101010"
+green = "#99FFE4"
+orange = "#FFC799"
+red = "#FF8080"
+grey = "#505050"

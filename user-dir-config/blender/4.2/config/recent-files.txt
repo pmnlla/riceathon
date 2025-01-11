@@ -1,0 +1,3 @@
+/home/puppy/nixos-artwork/wallpapers/source/gear.blend
+/home/puppy/nixos-artwork/wallpapers/source/water-splash.blend
+/home/puppy/nixos-artwork/wallpapers/source/moonscape.blend

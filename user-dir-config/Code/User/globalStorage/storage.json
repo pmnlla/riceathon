@@ -3,12 +3,7 @@
     "telemetry.machineId": "eb9fcd3d098a4f976f7a42e0af9b7ab279461f180e0b31877b1e43f2bce3a7d2",
     "telemetry.devDeviceId": "f335bf24-0a1f-441e-9890-e9fa281f61fa",
     "backupWorkspaces": {
-        "workspaces": [
-            {
-                "id": "00476f2742b52b49006a6a7d3036d0b4",
-                "configURIPath": "file:///home/puppy/.config/Code/Workspaces/1735702225130/workspace.json"
-            }
-        ],
+        "workspaces": [],
         "folders": [
             {
                 "folderUri": "file:///home/puppy/rice"
@@ -19,7 +14,8 @@
     "profileAssociations": {
         "workspaces": {
             "file:///etc/nixos": "__default__profile__",
-            "file:///home/puppy/rice": "__default__profile__"
+            "file:///home/puppy/rice": "__default__profile__",
+            "file:///home/puppy/rice/user-dir-config": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -73,7 +69,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -93,12 +90,12 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///etc/nixos",
-                                        "path": "/etc/nixos",
+                                        "external": "file:///home/puppy/rice/user-dir-config",
+                                        "path": "/home/puppy/rice/user-dir-config",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "/etc/nixos"
+                                    "label": "~/rice/user-dir-config"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -156,6 +153,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -294,13 +298,11 @@
                     },
                     {
                         "id": "actions.find",
-                        "label": "&&Find",
-                        "enabled": false
+                        "label": "&&Find"
                     },
                     {
                         "id": "editor.action.startFindReplaceAction",
-                        "label": "&&Replace",
-                        "enabled": false
+                        "label": "&&Replace"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -461,7 +463,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "&&Panel"
+                                    "label": "&&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "toggle.toggleCustomTitleBar",
@@ -770,8 +773,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -780,8 +782,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1101,8 +1102,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1679,30 +1679,26 @@
         }
     },
     "theme": "vs-dark",
-    "themeBackground": "#1f1f1f",
+    "themeBackground": "#101010",
     "windowSplash": {
         "zoomLevel": 0,
         "baseTheme": "vs-dark",
         "colorInfo": {
             "foreground": "#cccccc",
-            "background": "#1f1f1f",
-            "editorBackground": "#1f1f1f",
-            "titleBarBackground": "#181818",
-            "titleBarBorder": "#2b2b2b",
-            "activityBarBackground": "#181818",
-            "activityBarBorder": "#2b2b2b",
-            "sideBarBackground": "#181818",
-            "sideBarBorder": "#2b2b2b",
-            "statusBarBackground": "#181818",
-            "statusBarBorder": "#2b2b2b",
-            "statusBarNoFolderBackground": "#1f1f1f"
+            "background": "#101010",
+            "editorBackground": "#101010",
+            "titleBarBackground": "#101010",
+            "activityBarBackground": "#101010",
+            "sideBarBackground": "#101010",
+            "statusBarBackground": "#101010",
+            "statusBarNoFolderBackground": "#68217a"
         },
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 256,
+            "sideBarWidth": 170,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1713,10 +1709,10 @@
             "backupPath": "/home/puppy/.config/Code/Backups/ea6dc7a0d83b8ad72acd1f042c2a6ded",
             "uiState": {
                 "mode": 0,
-                "x": 448,
-                "y": 156,
-                "width": 1024,
-                "height": 768
+                "x": 0,
+                "y": 0,
+                "width": 1920,
+                "height": 1080
             }
         },
         "openedWindows": []
